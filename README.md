@@ -1,5 +1,5 @@
 # flask_api_rest
-Aplicaciones para test de comunicacion de entornos, despliegues y comunicacion 
+Aplicaciones para test de comunicacion de entornos y despliegues. 
 
 Primer commit:
 	Dos rest en flask que almacenan key/value en redis
