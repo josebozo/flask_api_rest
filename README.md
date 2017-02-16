@@ -10,3 +10,9 @@ Primer commit:
 
 	rest_read: lectura de key/value almacenada en redis
 	comando: curl -i  http://localhost:5001/todo/api/read/<key>
+
+
+Para despliegue rapido ejecutamos "docker-compose up" 
+Empaquetara y desplegara el conjunto de elementos para su uso.
+
+En caso que se dese reconstruir la imagen en cada despliegue "docker-compose up --build"

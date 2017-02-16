@@ -1,0 +1,26 @@
+version: '2'
+
+networks:
+  testnetwork:
+    driver: bridge
+
+services:
+
+ redis.db:
+  image: redis
+  networks:
+    - testnetwork
+
+ add:
+  build: ./rest_add
+  networks:
+    - testnetwork
+  ports:
+    - 5000:5000
+
+ read:
+  build: ./rest_read
+  networks:
+    - testnetwork
+  ports:
+    - 5001:5000
