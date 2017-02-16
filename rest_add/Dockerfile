@@ -1,6 +1,6 @@
 from josebozo/docker-python-flask
 
-MAINTAINER Jose Bozo <josebozo@hotmai.com>
+MAINTAINER Jose Bozo <josebozo@hotmail.com>
 
 RUN pip install redis
 
