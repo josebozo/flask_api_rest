@@ -3,7 +3,7 @@
 import redis
 from flask import Flask, jsonify, abort, request
 
-redis_server = redis.Redis('localhost')
+redis_server = redis.Redis('redis.db')
 
 app = Flask(__name__)
 
@@ -21,4 +21,4 @@ def get_key(key):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
